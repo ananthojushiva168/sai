@@ -69,7 +69,7 @@ function handleViewGrievances(event) {
   event.preventDefault();
   const name = document.getElementById('studentName').textContent;
   const email = document.getElementById('studentEmail').textContent;
-  const url = `C:/Users/akava/Desktop/Project/complaint portal/StudentDashboard/viewComplaints.html?name=${name}&email=${email}`;
+  const url = `https://rguktcomplaintsportal.netlify.app/StudentDashboard/viewComplaints.html?name=${name}&email=${email}`;
   window.location.href = url;
 }
 
@@ -77,11 +77,11 @@ function handleChangePassword(event) {
   event.preventDefault();
   const name = document.getElementById('studentName').textContent;
   const email = document.getElementById('studentEmail').textContent;
-  const url = `C:/Users/akava/Desktop/Project/complaint portal/ChangePasswordDashboard/ChangePassword.html?name=${name}&email=${email}`;
+  const url = `https://rguktcomplaintsportal.netlify.app/ChangePasswordDashboard/ChangePassword.html?name=${name}&email=${email}`;
   window.location.href = url;
 }
 
 function handleLogout(event) {
   event.preventDefault();
-  window.location.href = 'C:/Users/akava/Desktop/Project/complaint portal/LoginPage/index.html';
+  window.location.href = 'https://rguktcomplaintsportal.netlify.app/LoginPage/index.html';
 }

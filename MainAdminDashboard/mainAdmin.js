@@ -58,5 +58,5 @@ document.addEventListener('DOMContentLoaded', () => {
   const backToHomeButton = document.getElementById('backToHomeButton');
   backToHomeButton.addEventListener('click', () => {
     // Redirect to index.html
-    window.location.href = 'C:/Users/akava/Desktop/Project/complaint portal/LoginPage/index.html';
+    window.location.href = 'https://rguktcomplaintsportal.netlify.app/LoginPage/index.html';
   });

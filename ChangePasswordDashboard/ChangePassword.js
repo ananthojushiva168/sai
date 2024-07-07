@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // const email = new URLSearchParams(window.location.search).get('email');
 
         // Build the URL with parameters
-        const url = `C:/Users/akava/Desktop/Project/complaint portal/StudentDashboard/student.html?name=${Name}&email=${Email}`;
+        const url = `https://rguktcomplaintsportal.netlify.app/StudentDashboard/student.html?name=${Name}&email=${Email}`;
         
         // Redirect to admin.html with parameters
         window.location.href = url;

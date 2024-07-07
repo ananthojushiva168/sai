@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     event.preventDefault();
     const name = document.getElementById('adminName').textContent;
     const email = document.getElementById('adminEmail').textContent;
-    const url = `changePassword.html?name=${name}&email=${email}`;
+    const url = `https://rguktcomplaintsportal.netlify.app/changePassword.html?name=${name}&email=${email}`;
     window.location.href = url;
   }
   
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const Name=document.getElementById('adminName').textContent;
       const Email=document.getElementById('adminEmail').textContent;
       // const url = `C:/Users/akava/Desktop/Project/complaint portal/AdminDashboard/viewComplaints.html?hostel=${hostel}&wing=${wing}&name=${Name}&email=${Email}&issue=${issue}`;
-      const url = `viewComplaints.html?name=${Name}&email=${Email}&issue=${issue}`;
+      const url = `https://rguktcomplaintsportal.netlify.app/viewComplaints.html?name=${Name}&email=${Email}&issue=${issue}`;
       window.location.href = url;
     }
     
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const Name=document.getElementById('adminName').textContent;
       const Email=document.getElementById('adminEmail').textContent;
       // const url = `C:/Users/akava/Desktop/Project/complaint portal/AdminDashboard/viewComplaints.html?hostel=${hostel}&wing=${wing}&name=${Name}&email=${Email}&issue=${issue}`;
-      const url = `viewStatistics.html?name=${Name}&email=${Email}`;
+      const url = `https://rguktcomplaintsportal.netlify.app/viewStatistics.html?name=${Name}&email=${Email}`;
       window.location.href = url;
     }
 
@@ -59,5 +59,5 @@ document.addEventListener('DOMContentLoaded', () => {
     
     function handleLogout(event) {
       event.preventDefault();
-      window.location.href = '/index.html';
+      window.location.href = 'https://rguktcomplaintsportal.netlify.app/index.html';
     }

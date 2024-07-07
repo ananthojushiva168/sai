@@ -44,5 +44,5 @@ submitButton.addEventListener('click', () => {
 backButton.addEventListener('click', () => {
   // Navigate back to the index page
 //   alert("clicker");
-  window.location.href = 'C:/Users/akava/Desktop/Project/complaint portal/LoginPage/index.html';
+  window.location.href = 'https://rguktcomplaintsportal.netlify.app/LoginPage/index.html';
 });
