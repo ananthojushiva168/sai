@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MainAdmin Dashboard</title>
+  <link rel="stylesheet" href="mainadmin.css">
+</head>
+<body>
+  <header>
+    <h1 class="heading">Root Dashboard</h1>
+    <button id="backToHomeButton">Logout</button>
+  </header>
+
+  <div class="container">
+    <section class="profile-section">
+      <div class="profile">
+        <h2>Welcome MainAdmin</h2>
+        <p>Name: <span id="adminName"></span></p>
+        <p>Email: <span id="adminEmail"></span></p>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <div class="mainadmin-box">
+        <form id="signupForm">
+          <h3>Create New User</h3>
+          <div class="form-group">
+            <label for="newUserName">Name:</label>
+            <input type="text" id="newUserName" placeholder="Enter name">
+          </div>
+          <div class="form-group">
+            <label for="newUserEmail">Email:</label>
+            <input type="email" id="newUserEmail" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="newUserRole">Role:</label>
+            <select id="newUserRole">
+              <option value="Admin">Admin</option>
+              <option value="Student">Student</option>
+            </select>
+          </div>
+          <button type="submit">Create User</button>
+          <div id="successMessage" style="display: none; color: green; margin-top: 10px;">
+            Successfully created a user!
+          </div>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <script src="mainadmin.js"></script>
+</body>
+</html>
