@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // 
             //   const baseUrl = window.location.href.split('/').slice(0, 3).join('/');
             //   let url = `StudentDashboard/student.html?name=${encodeURIComponent(data.name)}&email=${encodeURIComponent(data.email)}`
-              const url = `https://rguktcomplaintsportal.netlify.app/student.html?name=${encodeURIComponent(data.name)}&email=${encodeURIComponent(data.email)}`;
+              const url = `https://rguktcomplaintsportal.netlify.app/StudentDashboard/student.html?name=${encodeURIComponent(data.name)}&email=${encodeURIComponent(data.email)}`;
 
               window.location.href = url
 
