@@ -44,5 +44,5 @@ submitButton.addEventListener('click', () => {
 backButton.addEventListener('click', () => {
   // Navigate back to the index page
 //   alert("clicker");
-  window.location.href = 'https://rguktcomplaintsportal.netlify.app/LoginPage/index.html';
+  window.location.href = 'https://rguktcomplaintsportal.netlify.app/index.html';
 });
