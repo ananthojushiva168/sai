@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     event.preventDefault();
     const name = document.getElementById('adminName').textContent;
     const email = document.getElementById('adminEmail').textContent;
-    const url = `https://rguktcomplaintsportal.netlify.app/changePassword.html?name=${name}&email=${email}`;
+    const url = `https://rguktcomplaintsportal.netlify.app/AdminDashboard/changePassword.html?name=${name}&email=${email}`;
     window.location.href = url;
   }
   
