@@ -68,6 +68,8 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
+   document.querySelector('.email').value = '';
+          document.querySelector('.password').value = '';
   const loginButton = document.querySelector('#LOGIN');
   const errorMessage = document.querySelector('.error-message');
   errorMessage.style.display = 'none';
