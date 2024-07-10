@@ -67,14 +67,108 @@
 // };
 
 
+
+
+
+// document.addEventListener('DOMContentLoaded', () => {
+  
+//   const loginButton = document.querySelector('#LOGIN');
+//   const errorMessage = document.querySelector('.error-message');
+//   errorMessage.style.display = 'none';
+
+//   loginButton.addEventListener('click', () => {
+    
+//       const email = document.querySelector('.email').value;
+//       const password = document.querySelector('.password').value;
+
+//       const requestBody = {
+//           email: email,
+//           password: password
+//       };
+
+//       fetch('https://saicomplaintregistration.vercel.app/login', {
+//           method: 'POST',
+//           headers: {
+//               'Content-Type': 'application/json'
+//           },
+//           body: JSON.stringify(requestBody)
+//       })
+//       .then(response => {
+//           if (response.ok) {
+//               console.log('Login success');
+//               return response.json();
+//           } else {
+//               console.log('Login failed');
+//               throw new Error('Login failed');
+//           }
+//       })
+//       .then(data => {
+//           console.log('Data received from server:', data);
+//           if (data.user === 'MainAdmin') {
+//               console.log('Redirecting to MainAdmin Dashboard');
+//               const encodedName = encodeURIComponent(data.name);
+//               const encodedEmail = encodeURIComponent(data.email);
+
+
+//               window.location.href = `MainAdminDashboard/mainAdmin.html?name=${encodedName}&email=${encodedEmail}`;
+//           } else if (data.user === 'Admin') {
+//               console.log('Redirecting to Admin Dashboard');
+//               const url = `https://rguktcomplaintsportal.netlify.app/AdminDashboard/admin.html?name=${encodeURIComponent(data.name)}&email=${encodeURIComponent(data.email)}`
+//               window.location.href = url;
+//           } else if (data.user === 'Student') {
+//               console.log('Redirecting to Student Dashboard');
+// // 
+//             //   const baseUrl = window.location.href.split('/').slice(0, 3).join('/');
+//             //   let url = `StudentDashboard/student.html?name=${encodeURIComponent(data.name)}&email=${encodeURIComponent(data.email)}`
+//               const url = `https://rguktcomplaintsportal.netlify.app/StudentDashboard/student.html?name=${encodeURIComponent(data.name)}&email=${encodeURIComponent(data.email)}`;
+
+//               window.location.href = url
+
+//           } else {
+//               console.log('Unknown user type:', data.user);
+//           }
+         
+//       })
+//       .catch(error => {
+//           console.error('Error during login:', error);
+//           errorMessage.style.display = 'block';
+//           document.querySelector('.email').value = '';
+//           document.querySelector('.password').value = '';
+//       });
+//   });
+
+//   const forgotPasswordButton = document.querySelector('.forgot-password');
+//   forgotPasswordButton.addEventListener('click', () => {
+//     const url = `https://rguktcomplaintsportal.netlify.app/LoginPage/forgotPassword.html`;
+
+//       window.location.href = url;
+//   });
+
+//   const togglePassword = document.querySelector('.toggle-password');
+//   const passwordInput = document.querySelector('.password');
+
+//   togglePassword.addEventListener('click', () => {
+//       const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+//       passwordInput.setAttribute('type', type);
+//       togglePassword.querySelector('i').classList.toggle('fa-eye-slash');
+//   });
+// });
+
+// // Disable back navigation on index.html
+// window.history.pushState(null, '', window.location.href);
+// window.onpopstate = function(event) {
+//   window.history.pushState(null, '', window.location.href);
+// };
+
 document.addEventListener('DOMContentLoaded', () => {
   
   const loginButton = document.querySelector('#LOGIN');
   const errorMessage = document.querySelector('.error-message');
   errorMessage.style.display = 'none';
 
-  loginButton.addEventListener('click', () => {
-    
+  loginButton.addEventListener('click', (event) => {
+      event.preventDefault(); // Prevent the default form submission
+
       const email = document.querySelector('.email').value;
       const password = document.querySelector('.password').value;
 
@@ -106,20 +200,16 @@ document.addEventListener('DOMContentLoaded', () => {
               const encodedName = encodeURIComponent(data.name);
               const encodedEmail = encodeURIComponent(data.email);
 
-
               window.location.href = `MainAdminDashboard/mainAdmin.html?name=${encodedName}&email=${encodedEmail}`;
           } else if (data.user === 'Admin') {
               console.log('Redirecting to Admin Dashboard');
-              const url = `https://rguktcomplaintsportal.netlify.app/AdminDashboard/admin.html?name=${encodeURIComponent(data.name)}&email=${encodeURIComponent(data.email)}`
+              const url = `https://rguktcomplaintsportal.netlify.app/AdminDashboard/admin.html?name=${encodeURIComponent(data.name)}&email=${encodeURIComponent(data.email)}`;
               window.location.href = url;
           } else if (data.user === 'Student') {
               console.log('Redirecting to Student Dashboard');
-// 
-            //   const baseUrl = window.location.href.split('/').slice(0, 3).join('/');
-            //   let url = `StudentDashboard/student.html?name=${encodeURIComponent(data.name)}&email=${encodeURIComponent(data.email)}`
               const url = `https://rguktcomplaintsportal.netlify.app/StudentDashboard/student.html?name=${encodeURIComponent(data.name)}&email=${encodeURIComponent(data.email)}`;
 
-              window.location.href = url
+              window.location.href = url;
 
           } else {
               console.log('Unknown user type:', data.user);
@@ -136,8 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const forgotPasswordButton = document.querySelector('.forgot-password');
   forgotPasswordButton.addEventListener('click', () => {
-    const url = `https://rguktcomplaintsportal.netlify.app/LoginPage/forgotPassword.html`;
-
+      const url = `https://rguktcomplaintsportal.netlify.app/LoginPage/forgotPassword.html`;
       window.location.href = url;
   });
 
@@ -156,3 +245,4 @@ window.history.pushState(null, '', window.location.href);
 window.onpopstate = function(event) {
   window.history.pushState(null, '', window.location.href);
 };
+
