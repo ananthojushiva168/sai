@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const Name=document.getElementById('adminName').textContent;
       const Email=document.getElementById('adminEmail').textContent;
       // const url = `C:/Users/akava/Desktop/Project/complaint portal/AdminDashboard/viewComplaints.html?hostel=${hostel}&wing=${wing}&name=${Name}&email=${Email}&issue=${issue}`;
-      const url = `https://rguktcomplaintsportal.netlify.app/viewComplaints.html?name=${Name}&email=${Email}&issue=${issue}`;
+      const url = `https://rguktcomplaintsportal.netlify.app/AdminDashboard/viewComplaints.html?name=${Name}&email=${Email}&issue=${issue}`;
       window.location.href = url;
     }
     
