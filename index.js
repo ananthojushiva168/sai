@@ -122,6 +122,8 @@ document.addEventListener('DOMContentLoaded', () => {
           } else {
               console.log('Unknown user type:', data.user);
           }
+         document.querySelector('.email').value = '';
+          document.querySelector('.password').value = '';
       })
       .catch(error => {
           console.error('Error during login:', error);
