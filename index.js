@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const forgotPasswordButton = document.querySelector('.forgot-password');
   forgotPasswordButton.addEventListener('click', () => {
-    const url = `https://rguktcomplaintsportal.netlify.app/forgotPassword.html`;
+    const url = `https://rguktcomplaintsportal.netlify.app/LoginPage/forgotPassword.html`;
 
       window.location.href = url;
   });
