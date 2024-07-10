@@ -110,6 +110,7 @@ function handleLogout(event) {
     event.preventDefault();
     const Name = document.getElementById('studentName').textContent;
     const Email = document.getElementById('studentEmail').textContent;
-    const url = `http://127.0.0.1:5500/admin.html?name=${encodeURIComponent(Name)}&email=${encodeURIComponent(Email)}`;
+    //const url = `http://127.0.0.1:5500/admin.html?name=${encodeURIComponent(Name)}&email=${encodeURIComponent(Email)}`;
+    const url = `admin.html?name=${encodeURIComponent(Name)}&email=${encodeURIComponent(Email)}`;
     window.location.href = url;
 }
