@@ -83,5 +83,5 @@ function handleChangePassword(event) {
 
 function handleLogout(event) {
   event.preventDefault();
-  window.location.href = 'https://rguktcomplaintsportal.netlify.app/LoginPage/index.html';
+  window.location.href = 'https://rguktcomplaintsportal.netlify.app/index.html';
 }
