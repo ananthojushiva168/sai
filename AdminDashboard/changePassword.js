@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // const email = new URLSearchParams(window.location.search).get('email');
 
         // Build the URL with parameters
-        const url = `http://127.0.0.1:5500/AdminDashboard/admin.html?name=${Name}&email=${Email}`;
+        const url = `/AdminDashboard/admin.html?name=${Name}&email=${Email}`;
         
         // Redirect to admin.html with parameters
         window.location.href = url;
