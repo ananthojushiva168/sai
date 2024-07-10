@@ -10,8 +10,7 @@
 <body>
     <div class="nav-buttons">
         <a href="./LoginPage/about.html" class="nav-link"><button class="about-btn">About Us</button></a>
-		<a href="./LoginPage/contact.html" class="nav-link"><button class="contact-btn">Contact Us</button></a>
-        
+        <a href="./LoginPage/contact.html" class="nav-link"><button class="contact-btn">Contact Us</button></a>
     </div>
     <header>
         <h1 class="heading">RGUKT COMPLAINT PORTAL</h1>
@@ -22,19 +21,21 @@
         <!-- login form -->
         <h3 class="title">Welcome to Complaint Portal!</h3>
        
-	<div class="login-box">
-            <input type="email" class="email ele" placeholder="Your Email" autocomplete="off">
-            <div class="password-container">
-                <input type="password" class="password ele" placeholder="Password" autocomplete="off">
-                <span class="toggle-password"><i class="far fa-eye"></i></span>
+        <form id="loginForm">
+            <div class="login-box">
+                <input type="email" class="email ele" placeholder="Your Email" autocomplete="off">
+                <div class="password-container">
+                    <input type="password" class="password ele" placeholder="Password" autocomplete="off">
+                    <span class="toggle-password"><i class="far fa-eye"></i></span>
+                </div>
+                <div class="error-message" style="display: none;">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    Invalid username or password
+                </div>
+                <button type="button" class="forgot-password">Forgot Password?</button>
+                <button type="button" class="clkbtn" id="LOGIN">Login</button>
             </div>
-            <div class="error-message" style="display: none;">
-                <i class="fas fa-exclamation-triangle"></i>
-                Invalid username or password
-            </div>
-            <button class="forgot-password">Forgot Password?</button>
-            <button class="clkbtn" id="LOGIN">Login</button>
-        </div>
+        </form>
     
     </div>
     <script src="index.js"></script>
